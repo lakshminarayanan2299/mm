@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Form</title>
+</head>
+<body text="white" background="images/pravin2.webp.jpg">
+    
+    <h1 align=center>Form Creation</h1>
+    <hr>
+
+    <p>Forms In HTML Is Used To Take a Values Form The User End</p>
+
+    <form action="formsresponse.html">
+
+        <label>NAME:</label><input type="text" placeholder="Enter Your Full Name" required id="name"><br><br>
+
+        <label >EMAIL:</label><input type="email" placeholder="Enter Your Mail"><br><br>
+
+        <label>PASSWORD:</label><input type="Password" placeholder="Enter Your Password" min="8" maxlength="16"><br><br>
+
+        <label>PHONE:</label><input type="tel" placeholder="Enter Your Mobile Number" maxlength="13" value="+91"> <br><br>
+
+        <label>Age:</label><input type="number" step="1" max="50" min="18"><br><br>
+
+        <label>DOB:</label><input type="datetime-local"><br><br>
+
+        <fieldset align="">
+            <legend align="center">Select your Gender</legend>
+            <input type="radio" name="Gender" id="m"> <label for="m">Male</label><br>
+            <input type="radio" name="Gender" id="f"> <label for="f">Female</label><br>
+            <input type="radio" name="Gender" id="o"> <label for="o">Other</label><br>
+
+        </fieldset>
+        <br><br>
+
+        <fieldset align="">
+            <legend align="center">Select your Skills</legend>
+            <input type="checkbox" name="skills" id="p"><label for="p">python</label><br>
+            <input type="checkbox" name="skills" id="j"><label for="j">java</label><br>
+            <input type="checkbox" name="skills" id="c"><label for="c">c++</label><br>
+            <input type="checkbox" name="skills" id="s"><label for="s">sql</label><br>
+            <input type="checkbox" name="skills" id="d"><label for="d">django</label><br>
+            <input type="checkbox" name="skills" id="a"><label for="a">aws</label><br>
+         
+         
+
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend align="center">Select Your State</legend>
+            <select>
+
+            <option>---SELECT---</option>
+                <option>karnataka</option>
+                <option>andra pradesh</option>
+                <option>tamilnadu</option>
+                <option> jamu&kashmir</option>
+                <option>hariyana</option>
+                <option>kerala</option>
+                <option>punjab</option>
+                <option>gujarat</option>
+                <option>madhya pradesh</option>
+                <option>maharastra</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend align="center">Upload Your Resume</legend>
+
+            <input type="file">
+        </fieldset>
+        <br><br>
+        <input type="submit" value="upload">
+        
+        <input type="reset" value="clear data">
+
+    </form>
+</body>
+</html>
